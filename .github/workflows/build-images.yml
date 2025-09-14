@@ -32,11 +32,5 @@ jobs:
       - name: build image and push to docker hub
         run: |
           docker buildx build --push \
-            --tag stroebs/dn42-pingfinder:latest  \
-            --platform linux/arm/v7 .
-
-      - name: build image and push to docker hub
-        run: |
-          docker buildx build --push \
-            --tag stroebs/dn42-pingfinder:latest  \
+            --tag stroebs/dn42-peerfinder:latest  \
             --platform linux/arm/v7,linux/amd64,linux/arm64 .
